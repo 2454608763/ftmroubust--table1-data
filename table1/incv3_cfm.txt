@@ -1,0 +1,41 @@
+Evaluation Results (2026-01-27|20:35:28)
+Job started at 2026-01-27|20:07:05
+Arguments:
+  device: cuda:4
+  attack_method: RTMC
+  batch_size: 20
+  model_name: inception_v3
+  beta: 0.01
+  ensemble_size: 1
+  eval: True
+  save_dir: ./exp/incv3_cfm
+  image_dir: ./data/images
+  image_csv: ./data/images.csv
+  seed: 42
+  img_size: 299
+  config_idx: 1
+  debug: False
+  no_ddm: False
+  no_cfd: False
+  no_sfm: False
+--------------------------------------------------
+Efficiency Metrics (Pure Computation):
+  Total Attack Time: 1300.16 s
+  Total Images: 828
+  Average Speed: 1.5702 s/img
+--------------------------------------------------
+Model: ResNet18              | Attack Success: 31.6% (262/828)
+Model: ResNet50              | Attack Success: 33.5% (277/828)
+Model: vgg16                 | Attack Success: 27.7% (229/828)
+Model: inception_v3          | Attack Success: 96.9% (802/828)
+Model: efficientnet_b0       | Attack Success: 43.8% (363/828)
+Model: DenseNet121           | Attack Success: 43.8% (363/828)
+Model: mobilenet_v2          | Attack Success: 32.7% (271/828)
+Model: inception_resnet_v2   | Attack Success: 43.2% (358/828)
+Model: inception_v4_timm     | Attack Success: 51.3% (425/828)
+Model: xception              | Attack Success: 40.9% (339/828)
+Model: vit_base_patch16_224  | Attack Success: 2.4% (20/828)
+Model: levit_384             | Attack Success: 26.1% (216/828)
+Model: convit_base           | Attack Success: 4.6% (38/828)
+Model: twins_svt_base        | Attack Success: 10.5% (87/828)
+Model: pit                   | Attack Success: 14.6% (121/828)

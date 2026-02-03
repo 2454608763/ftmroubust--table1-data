@@ -1,0 +1,42 @@
+Evaluation Results (2026-02-02|21:04:30)
+Job started at 2026-02-02|20:50:56
+Arguments:
+  device: cuda:1
+  attack_method: RDI-Admix
+  batch_size: 20
+  model_name: ResNet50
+  beta: 0.01
+  num_iter: 300
+  ensemble_size: 1
+  eval: True
+  save_dir: ./exp/table1_resnet50/rdi_admix
+  image_dir: ./data/images
+  image_csv: ./data/images.csv
+  seed: 42
+  img_size: 224
+  config_idx: 1
+  debug: False
+  no_ddm: False
+  no_cfd: False
+  no_sfm: False
+--------------------------------------------------
+Efficiency Metrics (Pure Computation):
+  Total Attack Time: 466.94 s
+  Total Images: 828
+  Average Speed: 0.5639 s/img
+--------------------------------------------------
+Model: ResNet18              | Attack Success: 29.7% (246/828)
+Model: ResNet50              | Attack Success: 98.1% (812/828)
+Model: vgg16                 | Attack Success: 52.5% (435/828)
+Model: inception_v3          | Attack Success: 1.4% (12/828)
+Model: efficientnet_b0       | Attack Success: 11.5% (95/828)
+Model: DenseNet121           | Attack Success: 52.1% (431/828)
+Model: mobilenet_v2          | Attack Success: 14.3% (118/828)
+Model: inception_resnet_v2   | Attack Success: 0.2% (2/828)
+Model: inception_v4_timm     | Attack Success: 2.2% (18/828)
+Model: xception              | Attack Success: 0.7% (6/828)
+Model: vit_base_patch16_224  | Attack Success: 0.2% (2/828)
+Model: levit_384             | Attack Success: 7.9% (65/828)
+Model: convit_base           | Attack Success: 1.2% (10/828)
+Model: twins_svt_base        | Attack Success: 3.9% (32/828)
+Model: pit                   | Attack Success: 3.5% (29/828)
